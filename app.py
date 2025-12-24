@@ -17,7 +17,7 @@ def save_progress(index):
 # ----------------------
 # Daten laden
 # ----------------------
-with open("Nailslist.txt", "r") as f:
+with open("Nailslist_formated.txt", "r") as f:
     nails = [line.strip() for line in f if line.strip()]
 
 total = len(nails)
@@ -155,3 +155,4 @@ if st.session_state.running:
     st.session_state.index += 1
     save_progress(st.session_state.index)
     st.rerun()
+
